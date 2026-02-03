@@ -22,7 +22,7 @@ export const CONFIG = {
   audioUrl: "/media/background_song.mp3",
 
   // Voice note configuration
-  voiceNoteUrl: "/media/audio_note.mpeg",
+  voiceNoteUrl: "/media/audio_note.mp3",
   anniversaryDate: "2020-04-24", // YYYY-MM-DD format for date picker
 
   // Finale video
