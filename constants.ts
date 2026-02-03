@@ -19,10 +19,10 @@ export const CONFIG = {
   countdownSubtitle: "And it still feels new 💕",
 
   // Custom background music
-  audioUrl: "/Media/background_song.mp3",
+  audioUrl: "/media/background_song.mp3",
 
   // Voice note configuration
-  voiceNoteUrl: "/Media/audio_note.mpeg",
+  voiceNoteUrl: "/media/audio_note.mpeg",
   anniversaryDate: "2020-04-24", // YYYY-MM-DD format for date picker
 
   // Finale video
@@ -69,17 +69,17 @@ export const CONFIG = {
 
   // Gallery with personal photos (9 photos in scrollable 3x3 grid)
   memories: [
-    { url: "/Media/IMG_20250206_164514.jpg", caption: "We Look Super Hot together 🔥" },
-    { url: "/Media/IMG_20250210_120444.jpg", caption: "Together always 🌊" },
-    { url: "/Media/IMG_20250524_151501.jpg", caption: "Thank you for being with me on my special day ❤️" },
-    { url: "/Media/IMG_20250527_174207.jpg", caption: "Hotties Slaying Together ❤️‍🔥" },
-    { url: "/Media/IMG_20250601_100042.jpg", caption: "One of your Fav ~ clicked by obviously me ❤️" },
-    { url: "/Media/IMG_20250615_152404.jpg", caption: "One of our core memories ✨" },
-    { url: "/Media/IMG_20250629_104607.jpg", caption: "Beautiful Smile 💖" },
-    { url: "/Media/Snapchat-1708200357.jpg", caption: "Just Us 😊" },
-    { url: "/Media/Snapchat-2104807119.jpg", caption: "Silly Simu 🌟" },
+    { url: "/media/IMG_20250206_164514.jpg", caption: "We Look Super Hot together 🔥" },
+    { url: "/media/IMG_20250210_120444.jpg", caption: "Together always 🌊" },
+    { url: "/media/IMG_20250524_151501.jpg", caption: "Thank you for being with me on my special day ❤️" },
+    { url: "/media/IMG_20250527_174207.jpg", caption: "Hotties Slaying Together ❤️‍🔥" },
+    { url: "/media/IMG_20250601_100042.jpg", caption: "One of your Fav ~ clicked by obviously me ❤️" },
+    { url: "/media/IMG_20250615_152404.jpg", caption: "One of our core memories ✨" },
+    { url: "/media/IMG_20250629_104607.jpg", caption: "Beautiful Smile 💖" },
+    { url: "/media/Snapchat-1708200357.jpg", caption: "Just Us 😊" },
+    { url: "/media/Snapchat-2104807119.jpg", caption: "Silly Simu 🌟" },
   ],
 
   // Puzzle image
-  puzzleImageUrl: "/Media/Collage_20250527_230027.jpg",
+  puzzleImageUrl: "/media/Collage_20250527_230027.jpg",
 };
