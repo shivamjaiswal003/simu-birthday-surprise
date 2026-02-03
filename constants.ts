@@ -19,10 +19,10 @@ export const CONFIG = {
   countdownSubtitle: "And it still feels new 💕",
 
   // Custom background music
-  audioUrl: "/Media/Background Song.mp3",
+  audioUrl: "/Media/background_song.mp3",
 
   // Voice note configuration
-  voiceNoteUrl: "/Media/Audio Note.mpeg",
+  voiceNoteUrl: "/Media/audio_note.mpeg",
   anniversaryDate: "2020-04-24", // YYYY-MM-DD format for date picker
 
   // Finale video
