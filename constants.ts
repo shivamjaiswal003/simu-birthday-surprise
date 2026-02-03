@@ -26,7 +26,7 @@ export const CONFIG = {
   anniversaryDate: "2020-04-24", // YYYY-MM-DD format for date picker
 
   // Finale video
-  finaleVideoUrl: "/Media/Finale_SimuBdayEdit.mp4",
+  finaleVideoUrl: "lolKvNY1ql8", // YouTube Video ID
 
   letterContent: `You're my safe space babe. I wish you all the success and happiness in life. Thank you for being the best part of my life. I can't wait to make many more memories with you. You are my home. ❤️`,
 

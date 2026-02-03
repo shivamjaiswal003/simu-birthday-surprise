@@ -171,14 +171,6 @@ export const Finale: React.FC<FinaleProps> = ({
     const handlePlayVideo = () => {
         setShowVideo(true);
         onVideoPlay?.();
-
-        // Small delay to let the video element mount
-        setTimeout(() => {
-            if (videoRef.current) {
-                videoRef.current.play().catch(console.error);
-                setIsVideoPlaying(true);
-            }
-        }, 100);
     };
 
     const handleVideoEnded = () => {
@@ -222,9 +214,6 @@ export const Finale: React.FC<FinaleProps> = ({
     }, []);
 
     const closeVideo = () => {
-        if (videoRef.current) {
-            videoRef.current.pause();
-        }
         setShowVideo(false);
         setIsVideoPlaying(false);
         onVideoEnd?.();
@@ -339,24 +328,22 @@ export const Finale: React.FC<FinaleProps> = ({
                         </button>
 
                         {/* Video Player */}
-                        <video
-                            ref={videoRef}
-                            src={videoUrl}
-                            className={`w-full ${isFullscreen ? 'h-full object-contain' : 'rounded-2xl shadow-2xl'}`}
-                            controls
-                            playsInline
-                            onEnded={handleVideoEnded}
-                            onPlay={handleVideoPlay}
-                            onPause={handleVideoPause}
-                        />
+                        {/* Video Player */}
+                        <div className={`relative w-full ${isFullscreen ? 'h-full' : 'aspect-video'} bg-black rounded-2xl overflow-hidden shadow-2xl`}>
+                            <iframe
+                                src={`https://www.youtube.com/embed/${videoUrl}?autoplay=1&rel=0&modestbranding=1&iv_load_policy=3`}
+                                title="Birthday Surprise Video"
+                                className="w-full h-full"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            />
+                        </div>
 
-                        {/* Emotional Text Overlay (shows when paused) */}
-                        {!isVideoPlaying && (
-                            <div className="absolute inset-0 flex items-center justify-center bg-black/40 rounded-2xl pointer-events-none">
-                                <p className="text-white text-2xl font-bold text-center px-8 drop-shadow-lg">
-                                    Made with love, just for you 💕
-                                </p>
-                            </div>
+                        {/* Emotional Text Overlay (shows below video now) */}
+                        {!isFullscreen && (
+                            <p className="text-white/80 text-sm md:text-base font-medium text-center mt-4 drop-shadow-lg">
+                                Made with love, just for you 💕
+                            </p>
                         )}
                     </div>
                 </div>
