@@ -1,0 +1,7 @@
+{
+  "name": "Simu's Surprise",
+  "description": "A romantic interactive experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
